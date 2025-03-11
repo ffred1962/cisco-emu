@@ -1,4 +1,10 @@
 paramiko
 netconf
+django
+django-debug-toolbar
+djangorestframework
+pygments
+requests
+django-bootstrap-v5
 
 
