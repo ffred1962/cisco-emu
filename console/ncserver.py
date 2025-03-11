@@ -8,7 +8,7 @@ nsmap_update({'pfx': MODEL_NS})
 class MyServer(object):
     def __init__(self, user, pw):
         controller = server.SSHUserPassController(username=user, password=pw)
-        self.server = server.NetconfSSHServer(server_ctl=controller, server_methods=self)
+        self.server = server.NetconfSSHServer(server_ctl=controller)
 
     def nc_append_capabilities(self, caps):
         ncutil.subelm(caps, "capability").text = MODEL_NS

@@ -132,7 +132,7 @@ def main(*margs):
     parser.add_argument("--debug", action="store_true", help="Enable debug logging")
     parser.add_argument(
         "--password", default="admin", help='Use "env:" or "file:" prefix to specify source')
-    parser.add_argument('--port', type=int, default=8300, help='Netconf server port')
+    parser.add_argument('--port', type=int, default=830, help='Netconf server port')
     parser.add_argument("--username", default="admin", help='Netconf username')
     args = parser.parse_args(*margs)
 
@@ -149,7 +149,7 @@ def main(*margs):
         print("^C to quit server")
     try:
         while True:
-            time.sleep(1)
+            time.sleep(3600)
     except Exception:
         print("quitting server")
 
