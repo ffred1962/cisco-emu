@@ -3,6 +3,8 @@ netconf
 django
 django-debug-toolbar
 djangorestframework
+markdown
+django-filter
 pygments
 requests
 django-bootstrap-v5
